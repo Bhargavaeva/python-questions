@@ -1,10 +1,4 @@
-a = input("Enter the value of the first variable (a): ")
-b = input("Enter the value of the second variable (b): ")
-# Display the original values
-print(f"Original values: a = {a}, b = {b}")
-# Swap the values using a temporary variable
-temp = a
-a = b
-b = temp
-# Display the swapped values
-print(f"Swapped values: a = {a}, b = {b}")
+celsius = float(input("Enter temperature in Celsius: "))
+# Conversion formula: Fahrenheit = (Celsius * 9/5) + 32
+fahrenheit = (celsius * 9/5) + 32
+print("temperature in fahrenheit",fahrenheit)
