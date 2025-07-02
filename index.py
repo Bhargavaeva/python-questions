@@ -176,3 +176,39 @@ else:
 num = int(input("Display multiplication table of: "))
 for i in range(1, 11):
   print(f"{num} X {i} = {num*i}") 
+
+
+num = int(input("Enter a number: "))
+ # Calculate the number of digits in num
+ num_str = str(num)
+ num_digits = len(num_str)
+ # Initialize variables
+ sum_of_powers = 0
+ temp_num = num
+ # Calculate the sum of digits raised to the power of num_digits
+ while temp_num > 0:
+ digit = temp_num % 10
+ sum_of_powers += digit ** num_digits
+ temp_num //= 10
+ # Check if it's an Armstrong number
+ if sum_of_powers == num:
+ print(f"{num} is an Armstrong number.")
+ else:
+ print(f"{num} is not an Armstrong number.")
+
+
+# Input the interval from the user
+ lower = int(input("Enter the lower limit of the interval: "))
+ upper = int(input("Enter the upper limit of the interval: "))
+ for num in range(lower, upper + 1):     
+# Iterate through the numbers i
+ order = len(str(num))  # Find the number of digits in 'num'
+ temp_num = num
+ sum = 0
+ while temp_num > 0:
+ digit = temp_num % 10
+ sum += digit ** order
+ temp_num //= 10
+ # Check if 'num' is an Armstrong number
+ if num == sum:
+ print(num)
