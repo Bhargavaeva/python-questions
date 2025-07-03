@@ -212,3 +212,26 @@ num = int(input("Enter a number: "))
  # Check if 'num' is an Armstrong number
  if num == sum:
  print(num)
+
+
+
+# Write a Python Program to Find the Sum of Natural Numbers.
+
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ limit = int(input("Enter the limit: "))
+ # Initialize the sum
+ sum = 0
+ # Print the sum
+ # Use a for loop to calculate the sum of natural numbers
+ for i in range(1, limit + 1):
+  sum += i
+ print("The sum of natural numbers up to", limit, "is:", sum)
